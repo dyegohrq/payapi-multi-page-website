@@ -6,19 +6,65 @@
 
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
 
+    <link rel="stylesheet" href="style/css.css">
+
     <title>Frontend Mentor | PayAPI Website Challenge</title>
   </head>
 
   <body>
-    Pricing
-    About
-    Contact
-    Schedule a Demo
+    <div class="circle-header"></div>
+    <nav  class="navbar">
+      <div class="logo">
+        <a href="index.html">
+          <img src="assets/shared/desktop/logo.svg" alt="">
+        </a>
+      </div>
+      <button class="burger">
+        <div id="bar1" class="bar"></div>
+        <div id="bar2" class="bar"></div>
+        <div id="bar3" class="bar"></div>
+      </button>
+      <div class="nav-menu">
+        <button class="burger close">
+          <div id="bar1" class="bar"></div>
+          <div id="bar2" class="bar"></div>
+          <div id="bar3" class="bar"></div>
+        </button>
+        <div class="line"></div>
+        <ul class="nav-links">
+          <li class="nav-item">
+            <a href="pricing.html" class="nav-link">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
+        </ul>
+        <div class="button btn btn-state-light">
+          <a href="contact.html">Schedule a Demo</a>
+      </div>
+      </div>
+    </nav>
+    <header id="header">
+      <div class="phone"></div>
+      <div class="title">
+        <h3>Start building with our APIs for absolutely free.</h3>
+      </div>
+      <div class="input">
+        <input type="text" name="email-home" id="email-home" placeholder="Enter email address" class="btn"></input>
+        <div class="btn-home button btn btn-state-light">
+          <a href="contact.html">Schedule a Demo</a>
+        </div>
+      </div>
+      <div class="duvida">
+        <p>Have any questions? <span>Contact Us</span></p>
+      </div>
+    </header>
 
-    Start building with our APIs for absolutely free.
-    Enter email address 
-    Schedule a Demo
-    Have any questions? Contact Us
+<!-- 
+    
 
     Who we work with
     Today, millions of people around the world have successfully connected 
@@ -54,7 +100,7 @@
 
     Pricing
     About
-    Contact
+    Contact -->
   </body>
 
 </html>
