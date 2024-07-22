@@ -1,0 +1,14 @@
+@import 'parts/color';
+@import 'parts/typography';
+@import 'parts/header';
+@import 'parts/main';
+@import 'parts/footer';
+
+body {
+    background: $link_water_white;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}

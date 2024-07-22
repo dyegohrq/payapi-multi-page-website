@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+$dm_serif_display: "DM Serif Display", serif;
+$public_sans: "Public Sans", sans-serif;
+
+body {
+    font-family: $public_sans;
+    font-size: 15px;
+    line-height: 28px;
+}
+
+// HEADINGS 
+
+.h1_large {
+    font-family: $dm_serif_display;
+    font-size: 72px;
+    line-height: 72px;
+    font-weight: 400;
+}
+
+.h1_small {
+    font-family: $dm_serif_display;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 56px;
+}
+
+h2 {
+    font-family: $dm_serif_display;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+}
+
+.h3_big {
+    font-family: $dm_serif_display;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 40px;
+}
+
+.h3_small {
+    font-family: $public_sans;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+h4 {
+    font-family: $dm_serif_display;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+}
