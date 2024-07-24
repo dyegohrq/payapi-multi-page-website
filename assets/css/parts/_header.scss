@@ -1,8 +1,9 @@
 .bg_pattern img{
     display: flex;
     position: absolute;
-    left: -50%;
-    top: -70%;
+    left: -29%;
+    top: -50%;
+    z-index: -1;
 }
 
 .header_content {

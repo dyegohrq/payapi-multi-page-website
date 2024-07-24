@@ -1,11 +1,7 @@
-const burger = document.getElementById('burger')
-const navBar = document.getElementById('nav_bar')
-const btnClose = document.getElementById('btn_close')
+const burger = document.getElementById('burger');
 
-burger.addEventListener('click', () => {
-    navBar.classList.toggle('active')
-})
+burger.addEventListener('click', (e) => {
+    e.preventDefault()
 
-btnClose.addEventListener('click', () => {
-    navBar.classList.toggle('active')
+    alert('ok')
 })
