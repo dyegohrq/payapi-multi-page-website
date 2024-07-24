@@ -81,6 +81,7 @@ h4 {
   padding: 45px 15px;
   gap: 25px;
   overflow: hidden;
+  transition: all 0.5s ease-in-out;
 }
 .nav_bar .btn_close {
   width: 100%;
@@ -160,7 +161,6 @@ h4 {
   display: flex;
   width: 77%;
   overflow: auto;
-  transition: all 0.5s ease-in-out;
 }
 
 * {

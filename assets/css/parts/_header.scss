@@ -33,6 +33,7 @@
     padding: 45px 15px;
     gap: 25px;
     overflow: hidden;
+    transition: all .5s ease-in-out;
 
     .btn_close {
         width: 100%;
@@ -128,5 +129,4 @@
     display: flex;
     width: 77%;
     overflow: auto;
-    transition: all .5s ease-in-out;
 }
