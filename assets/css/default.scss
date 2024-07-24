@@ -4,6 +4,12 @@
 @import 'parts/main';
 @import 'parts/footer';
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background: $link_water_white;
 }
@@ -11,4 +17,28 @@ body {
 .container {
     max-width: 1200px;
     margin: auto;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    background-color: $dark_pink;
+    color: $link_water_white;
+    width: 173px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 24px;
+    transition: background-color .5s ease-in-out;
+}
+
+.btn:hover {
+    background-color: $charm_pink;
 }

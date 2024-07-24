@@ -15,13 +15,23 @@
 
   <body>
     <header>
-      <div class="bg_pattern"></div>
+      <div class="bg_pattern">
+        <img src="assets/shared/desktop/bg-pattern-circle.svg" alt="">
+      </div>
       <div class="container">
         <div class="header_content">
           <a href="index.html" class="logo">
             <img src="assets/shared/desktop/logo.svg" alt="">
           </a>
-          <nav class="nav_bar">
+          <nav class="nav_bar" id="nav_bar">
+            <button class="btn_close" id="btn_close">
+              <div class="hamburguer">
+                <div id="bar_1" class="bar"></div>
+                <div id="bar_2" class="bar"></div>
+                <div id="bar_3" class="bar"></div>
+              </div>
+            </button>
+            <div class="line"></div>
             <ul class="nav_list">
               <li class="nav_item">
                 <a href="" class="nav_link">Pricing</a>
@@ -32,12 +42,10 @@
               <li class="nav_item">
                 <a href="" class="nav_link">Contact</a>
               </li>
-              <li class="nav_item">
-                <a href="" class="nav_link">Schedule a Demo</a>
-              </li>
+              <a href="#" class="btn-menu btn">Schedule a Demo</a>
             </ul>
           </nav>
-          <button class="burger">
+          <button class="burger" id="burger">
             <div class="hamburguer">
               <div id="bar_1" class="bar"></div>
               <div id="bar_2" class="bar"></div>
@@ -88,6 +96,8 @@
     Pricing
     About
     Contact -->
+
+    <script src="assets/script/header.js"></script>
   </body>
 
 </html>

@@ -1,6 +1,8 @@
-.bg_pattern {
-    width: 780px;
-    height: 780px;
+.bg_pattern img{
+    display: flex;
+    position: absolute;
+    left: -50%;
+    top: -70%;
 }
 
 .header_content {
@@ -18,10 +20,87 @@
 
 .nav_bar {
     display: none;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: $mirage_blue;
+    width: 0;
+    height: 100dvh;
+    padding: 45px 15px;
+    gap: 25px;
+    overflow: hidden;
+
+    .btn_close {
+        width: 100%;
+        height: 40px;
+        background-color: transparent;
+        border: none;
+
+        .hamburguer{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: end;
+            gap: 4px;
+            width: 100%;
+            height: 100%;
+
+            .bar {
+                background-color: $link_water_white;
+                width: 30px;
+                height: 4px;
+            }
+
+            #bar_1 {
+                transform: rotate(45deg) translate( -5px, 8px);
+            }
+
+            #bar_2 {background-color: transparent;}
+
+            #bar_3 {
+                transform: rotate(-45deg) translate(3px, -16px);
+            }
+        }
+    }
+
+    .line {
+        width: 100%;
+        height: 1px;
+        background-color: $link_water_white;
+    }
+
+    .nav_list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 15px;
+
+        .nav_item {
+
+            a {
+                color: $link_water_white;
+                font-size: 20px;
+                font-weight: bold;
+                width: 150px;   
+            }
+        }
+
+        
+        .btn-menu {
+            width: 100%;
+        }
+    }
 }
 
+
+
 .burger {
-    width: 40px;
+    width: 30px;
     height: 30px;
     background: transparent;
     border: none;
@@ -42,4 +121,11 @@
             border-radius: 5px;
         }
     }
+}
+
+.active {
+    display: flex;
+    width: 77%;
+    overflow: auto;
+    transition: all .5s ease-in-out;
 }
