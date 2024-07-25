@@ -6,6 +6,7 @@ burger.addEventListener('click', (e) => {
     e.preventDefault()
 
     navBar.classList.toggle('active')
+    navBar.style.zIndex = '99'
 })
 
 btnClose.addEventListener('click', () => {
