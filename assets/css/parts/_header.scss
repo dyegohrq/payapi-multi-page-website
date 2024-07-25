@@ -1,8 +1,10 @@
+// HEADER
+
 .bg_pattern img{
     display: flex;
     position: absolute;
     left: 50%;
-    top: -40%;
+    top: -50%;
     z-index: -1;
     transform: translate(-50%, 0%);
 }
@@ -100,6 +102,10 @@
     }
 }
 
+.nav_bar_tablet {
+    display: none;
+}
+
 
 
 .burger {
@@ -131,3 +137,162 @@
     width: 77%;
     overflow: auto;
 }
+
+@media screen and (min-width: 768px) {
+    .bg_pattern img{
+        top: -45%;
+    }
+    
+    .header_content {
+        .nav_bar_tablet {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;    
+            width: 65%;
+
+            .nav_list {
+                display: flex;
+                gap: 25px;
+
+                .nav_link {
+                    color: $san_juan_blue;
+                    font-weight: bold;
+                }
+            }
+        }
+
+        .burger {
+            display: none;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .bg_pattern img{
+        display: flex;
+        position: absolute;
+        left: 50%;
+        top: -30%;
+        z-index: -1;
+        transform: translate( 20%, 0%);
+    }
+
+    .header_content {
+        .nav_bar_tablet {
+            .nav_list {
+                gap: 65px;
+            }
+        }
+    }
+}
+
+// HEADER 
+
+// START BUILDING
+.start {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 326px;
+    margin: auto;
+    
+    img{
+        width: 320px;
+        position: relative;
+        left: 5%;
+    }
+
+    .text_start {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+
+        h1 {
+            color: $san_juan_blue;
+        }
+
+        #form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            #email {
+                padding: 15px 30px;
+                border-radius: 24px;
+                border: none;
+                box-shadow: 10px 10px 25px -10px #36536b38;
+                outline: none;
+            }
+
+            #email::placeholder {
+                font-weight: bold;
+                color: $san_juan_blue;
+                font-family: $public_sans;
+            }
+
+            .btn {
+                width: 100%;
+            }
+        }
+
+        p {
+            color: $linght_san_juan_blue;
+
+            a {
+                color: $san_juan_blue;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .start {
+        width: 500px;
+
+        .text_start {
+
+            #form {
+                position: relative;
+                flex-direction: row;
+                width: 470px;
+
+                #email {
+                    width: 100%;
+                }
+
+                .btn {
+                    position: absolute;
+                    right: 0;
+                    width: 40%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .start {
+        flex-direction: row;
+        width: 100%;
+        padding: 0 40px;
+
+        img {
+            width: 40%;
+            order: 1;
+        }
+
+        .text_start {
+            width: 65%;
+            align-items: start;
+            text-align: left;
+        }
+    }
+}
+
+// START BUILDING

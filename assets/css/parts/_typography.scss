@@ -11,26 +11,56 @@ body {
 
 // HEADINGS 
 
-.h1_large {
-    font-family: $dm_serif_display;
-    font-size: 72px;
-    line-height: 72px;
-    font-weight: 400;
-}
-
-.h1_small {
+h1 {
+    font-size: 32px;
     font-family: $dm_serif_display;
     font-weight: 400;
-    font-size: 56px;
-    line-height: 56px;
+    line-height: 36px;
+    letter-spacing: -0.25px;
+    overflow: hidden;
 }
 
 h2 {
     font-family: $dm_serif_display;
+    font-size: 32px;
     font-weight: 400;
-    font-size: 48px;
-    line-height: 56px;
+    line-height: 36px;
+    letter-spacing: -0.25px;
+    overflow: hidden;
 }
+
+p {
+    font-size: 15px;
+    line-height: 28px;
+    
+}
+
+@media screen and (min-width: 768px) {
+    h1 {
+        font-size: 48px;
+        line-height: 56px;
+        letter-spacing: -0.37px;
+    }
+
+    h2 {
+        font-family: $dm_serif_display;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 56px;
+        letter-spacing: -0.37px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    h1 {
+        font-size: 72px;
+        line-height: 76px;
+        letter-spacing: -0.55px;
+        font-weight: 400;
+    }
+}
+
+
 
 .h3_big {
     font-family: $dm_serif_display;
