@@ -101,7 +101,7 @@ h4 {
   right: 0;
   background-color: #1b262f;
   width: 0;
-  height: 100dvh;
+  height: 100%;
   padding: 45px 15px;
   gap: 25px;
   overflow: hidden;
