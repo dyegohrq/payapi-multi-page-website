@@ -1,24 +1,147 @@
-.plan {
+.bg_pattern img{
+    left: 121%;
+    top: -67%;
+}
+
+.plan_container{
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
     text-align: center;
+    padding: 40px;
+    gap: 40px;
 
-    .header_plan {
-        
-        h3 {
-            color: $dark_pink;
+    .plan {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+
+        .header_plan {
+            overflow: hidden;
+
+            h3 {
+                color: $dark_pink;
+            }
+
+            .alternative_text {
+                color: $linght_san_juan_blue;
+                visibility: hidden;
+            }
+
+            .price {
+                font-family: $dm_serif_display;
+                font-size: 56px;
+                line-height: 72px;
+                letter-spacing: -0.43px;
+                color: $san_juan_blue;
+            }
         }
 
-        .alternative_text {
-            color: $linght_san_juan_blue;
-            visibility: hidden;
+        .main_plan {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-width: 1px 0px;
+            border-color: hsla(208, 33%, 32%, 0.425);
+            border-style: solid;
+            width: 100%;
+            padding: 20px;
+
+            small {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 130px;
+                
+
+                span {
+                    width: 60%;
+                    text-align: left;
+                }
+            }
+
+            .text_active {
+                i {
+                    color: $dark_pink;
+                }
+
+                span {
+                    color: $san_juan_blue;
+                }
+            }
+
+            .text_disabled {
+                i {
+                    visibility: hidden;
+                }
+
+                span {
+                    color: hsla(208, 33%, 32%, 0.425);
+                }
+            }
         }
 
-        .price {
-            font-family: $dm_serif_display;
-            font-size: 56px;
-            color: red;
+        .footer_plan {
+            .btn_plan {
+                width: 168px;
+                color: $san_juan_blue;
+                border-color: $san_juan_blue;
+            }
+
+            .btn_plan:hover {
+                background: $san_juan_blue;
+                color: $link_water_white;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .bg_pattern img {
+        left: 108%;
+        top: -58%;
+    }
+
+    .plan_container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+
+        .plan {
+            .header_plan {
+            
+                .alternative_text {
+                    visibility: visible;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .bg_pattern img{
+        left: 50%;
+        top: -57%;
+    }
+
+    .plan_container {
+        text-align: left;
+
+        .plan {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            gap: 20px;
+            
+            .header_plan {
+                h3 {
+                    overflow: hidden;
+                }
+            }
+
+            .main_plan {
+                align-items: start;
+            }
         }
     }
 }

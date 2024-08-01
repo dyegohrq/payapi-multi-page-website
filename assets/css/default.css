@@ -51,19 +51,6 @@ p {
     font-weight: 400;
   }
 }
-.h3_big {
-  font-family: "DM Serif Display", serif;
-  font-weight: 400;
-  font-size: 32px;
-  line-height: 40px;
-}
-
-.h3_small {
-  font-family: "Public Sans", sans-serif;
-  font-size: 18px;
-  line-height: 25px;
-}
-
 h3 {
   font-family: "DM Serif Display", serif;
   font-weight: 400;

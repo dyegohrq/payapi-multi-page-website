@@ -6,57 +6,145 @@
 
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
 
+    <link rel="stylesheet" href="assets/css/default.css">
+    <link rel="stylesheet" href="assets/css/pages.css">
+
     <title>Frontend Mentor | PayAPI Website Challenge</title>
   </head>
 
   <body>
-    Pricing
-    About
-    Contact
-    Schedule a Demo
+    <header>
+      <div class="bg_pattern">
+        <img src="assets/shared/desktop/bg-pattern-circle.svg" alt="">
+      </div>
+      <div class="container">
+        <div class="header_content">
+          <a href="index.html" class="logo">
+            <img src="assets/shared/desktop/logo.svg" alt="">
+          </a>
+          <nav class="nav_bar" id="nav_bar">
+            <button class="btn_close" id="btn_close">
+              <div class="hamburguer">
+                <div id="bar_1" class="bar"></div>
+                <div id="bar_2" class="bar"></div>
+                <div id="bar_3" class="bar"></div>
+              </div>
+            </button>
+            <div class="line"></div>
+            <ul class="nav_list">
+              <li class="nav_item">
+                <a href="pricing.html" class="nav_link">Pricing</a>
+              </li>
+              <li class="nav_item">
+                <a href="about.html" class="nav_link">About</a>
+              </li>
+              <li class="nav_item">
+                <a href="" class="nav_link">Contact</a>
+              </li>
+              <a href="#" class="btn-menu btn">Schedule a Demo</a>
+            </ul>
+          </nav>
+          <nav class="nav_bar_tablet">
+            <ul class="nav_list">
+              <li class="nav_item">
+                <a href="" class="nav_link">Pricing</a>
+              </li>
+              <li class="nav_item">
+                <a href="" class="nav_link">About</a>
+              </li>
+              <li class="nav_item">
+                <a href="" class="nav_link">Contact</a>
+              </li>
+            </ul>
+            <a href="#" class="btn-menu btn">Schedule a Demo</a>
+          </nav>
+          <button class="burger" id="burger">
+            <div class="hamburguer">
+              <div id="bar_1" class="bar"></div>
+              <div id="bar_2" class="bar"></div>
+              <div id="bar_3" class="bar"></div>
+            </div>
+          </button>
+        </div>
+      </div>
+    </header>
 
-    We empower innovators by delivering access to the financial system
+    <main class="main">
+      <h2 class="title title_about container">We empower innovators by delivering access to the financial system</h2>
 
-    Our Vision
+      <div class="our container">
+        <div class="our_vision our_text">
+          <h3>Our Vision</h3>
+          <p>
+            Our main goal is to build beautiful consumer experiences along with developer-friendly
+            infrastructure. The result is an intelligent tool that gives everyone the ability to create
+            amazing products that solve big problems. We are deeply focused on democratizing financial
+            services through technology.
+          </p>
+        </div>
+        <div class="our_business our_text">
+          <h3>Our Business</h3>
+          <p>
+            At the core of our platform is the technical infrastructure APIs that connect consumers.
+            Our innovative product provides key insights for businesses and individuals, as well as
+            robust reporting for traditional financial institutions and developers.
+          </p>
+        </div>
+      </div>
+      <div class="img_members"></div>
+      Team Members
+      300+
 
-    Our main goal is to build beautiful consumer experiences along with developer-friendly 
-    infrastructure. The result is an intelligent tool that gives everyone the ability to create 
-    amazing products that solve big problems. We are deeply focused on democratizing financial 
-    services through technology.
+      Offices in the US
+      3
 
-    Our Business
+      Transactions analyzed
+      10M+
 
-    At the core of our platform is the technical infrastructure APIs that connect consumers. 
-    Our innovative product provides key insights for businesses and individuals, as well as 
-    robust reporting for traditional financial institutions and developers.
+      The Culture
+      We strongly believe there's always an opportunity to learn from each other outside of
+      day-to-day work, whether it's company-wide offsites, internal hackathons, or co-worker meetups.
+      We always value cross-team collaboration and diversity of thought, no matter the job title.
 
-    Team Members 
-    300+
+      The People
+      
+      We're all passionate about building a more efficient and inclusive financial infrastructure
+      together. At PayAPI, we have diverse backgrounds and skills.
 
-    Offices in the US 
-    3
+      <div class="ready container">
+        <h2>Ready to start? </h2>
+        <form action="" id="form" class="form">
+          <input type="email" name="email" id="email" class="email" placeholder="Enter email address">
+          <a href="" class="btn">Schedule a Demo</a>
+        </form>
+      </div>
+    </main>
 
-    Transactions analyzed 
-    10M+
-
-    The Culture
-
-    We strongly believe there's always an opportunity to learn from each other outside of 
-    day-to-day work, whether it's company-wide offsites, internal hackathons, or co-worker meetups. 
-    We always value cross-team collaboration and diversity of thought, no matter the job title.
-
-    The People
-    
-    We're all passionate about building a more efficient and inclusive financial infrastructure 
-    together. At PayAPI, we have diverse backgrounds and skills.
-
-    Ready to start? 
-    Enter email address 
-    Schedule a Demo
-
-    Pricing
-    About
-    Contact
+    <footer class="footer" id="footer">
+      <div class="footer_content container">
+        <div class="left_content">
+          <div class="logo_footer">
+            <a href=""><img src="assets/shared/desktop/logo.svg" alt=""></a>
+          </div>
+          <ul class="nav_list">
+            <li class="nav_link">
+              <a href="pricing.html">Pricing</a>
+            </li>
+            <li class="nav_link">
+              <a href="about.html">About</a>
+            </li>
+            <li class="nav_link">
+              <a href="">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="social_media">
+          <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-twitter"></i></a>
+          <a href=""><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+    </footer>
   </body>
 
 </html>
