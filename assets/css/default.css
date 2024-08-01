@@ -26,6 +26,7 @@ h2 {
 p {
   font-size: 15px;
   line-height: 28px;
+  font-weight: 400;
 }
 
 @media screen and (min-width: 768px) {
@@ -63,13 +64,25 @@ p {
   line-height: 25px;
 }
 
-h4 {
+h3 {
   font-family: "DM Serif Display", serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 32px;
+  letter-spacing: -0.18px;
 }
 
+@media screen and (min-width: 768px) {
+  h3 {
+    line-height: 40px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  h3 {
+    font-size: 32px;
+    letter-spacing: -0.25px;
+  }
+}
 .bg_pattern img {
   display: flex;
   position: absolute;
@@ -209,8 +222,12 @@ h4 {
     gap: 25px;
   }
   .header_content .nav_bar_tablet .nav_list .nav_link {
-    color: #36536b;
+    color: #6c8294;
     font-weight: bold;
+    transition: color 0.3s ease-in-out;
+  }
+  .header_content .nav_bar_tablet .nav_list .nav_link:hover {
+    color: #36536b;
   }
   .header_content .burger {
     display: none;
@@ -272,6 +289,8 @@ h4 {
   border: none;
   box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.2196078431);
   outline: none;
+  color: #36536b;
+  font-weight: bold;
 }
 .form .email::-moz-placeholder {
   font-weight: bold;
@@ -515,12 +534,13 @@ h4 {
 #footer .footer_content .left_content .nav_list {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 35px;
   text-align: center;
   margin: 25px 0;
 }
 #footer .footer_content .left_content .nav_list .nav_link a {
-  color: #fbfcfe;
+  color: hsla(220, 60%, 99%, 0.753);
+  transition: color 0.3s ease-in-out;
 }
 #footer .footer_content .social_media {
   display: flex;
@@ -529,6 +549,7 @@ h4 {
 #footer .footer_content .social_media a i {
   color: #fbfcfe;
   font-size: 1.5em;
+  transition: color 0.3s ease-in-out;
 }
 
 @media screen and (min-width: 768px) {
@@ -542,7 +563,7 @@ h4 {
     width: 65%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
   }
   #footer .footer_content .left_content .nav_list {
     flex-direction: row;
@@ -553,10 +574,21 @@ h4 {
     justify-content: end;
     align-items: center;
   }
+  #footer .footer_content .social_media a i:hover {
+    color: #da6d97;
+  }
 }
 @media screen and (min-width: 1280px) {
   #footer .footer_content .left_content {
-    width: 35%;
+    width: 50%;
+  }
+  #footer .footer_content .left_content .nav_list .nav_link a:hover {
+    color: #fbfcfe;
+  }
+  #footer .footer_content .social_media {
+    width: 50%;
+    justify-content: end;
+    align-items: center;
   }
 }
 * {
@@ -568,10 +600,11 @@ h4 {
 
 body {
   background: #edf3f8;
+  margin: auto;
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1280px;
   margin: auto;
 }
 

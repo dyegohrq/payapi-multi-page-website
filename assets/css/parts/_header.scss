@@ -157,8 +157,13 @@
                 gap: 25px;
 
                 .nav_link {
-                    color: $san_juan_blue;
+                    color: $linght_san_juan_blue;
                     font-weight: bold;
+                    transition: color .3s ease-in-out;
+                }
+
+                .nav_link:hover {
+                    color: $san_juan_blue;
                 }
             }
         }
@@ -167,6 +172,8 @@
             display: none;
         }
     }
+
+    
 }
 
 @media screen and (min-width: 1280px) {
@@ -239,6 +246,8 @@
         border: none;
         box-shadow: 10px 10px 25px -10px #36536b38;
         outline: none;
+        color: $san_juan_blue;
+        font-weight: bold;
     }
 
     .email::placeholder {

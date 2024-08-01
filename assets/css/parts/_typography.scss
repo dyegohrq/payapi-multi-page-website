@@ -32,7 +32,7 @@ h2 {
 p {
     font-size: 15px;
     line-height: 28px;
-    
+    font-weight: 400;
 }
 
 @media screen and (min-width: 768px) {
@@ -75,9 +75,23 @@ p {
     line-height: 25px;
 }
 
-h4 {
+h3 {
     font-family: $dm_serif_display;
     font-weight: 400;
     font-size: 24px;
     line-height: 32px;
+    letter-spacing: -0.18px;
+}
+
+@media screen and (min-width: 768px) {
+    h3 {
+        line-height: 40px;     
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    h3 {
+        font-size: 32px;
+        letter-spacing: -0.25px;
+    }
 }

@@ -1,0 +1,24 @@
+.plan {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+
+    .header_plan {
+        
+        h3 {
+            color: $dark_pink;
+        }
+
+        .alternative_text {
+            color: $linght_san_juan_blue;
+            visibility: hidden;
+        }
+
+        .price {
+            font-family: $dm_serif_display;
+            font-size: 56px;
+            color: red;
+        }
+    }
+}
